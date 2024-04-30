@@ -6,6 +6,10 @@ quarto = 0
 quinto = 0
 pessoa = 'a'
 dias = 0
+def opa():
+   print('Ola')
+
+
 while True:
     print('_'*63)
     print("Menu Principal")
@@ -72,6 +76,7 @@ while True:
     elif op == 2:
         #Vizualizar acervo
         while True:
+            opa()
             print('_'*50)
             print('                   A C E R V O')
             print('-'*50)
