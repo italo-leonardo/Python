@@ -1,4 +1,4 @@
-def linha(quantidade, texto="*"):
+def linha(quantidade=15, texto="*"):
     for i in range(quantidade):
         print(texto, end="")
     print("")
@@ -9,3 +9,5 @@ print("PROF. CAETANO")
 linha(15)
 print("AULA NA UNIFAP")
 linha(20, "$")
+print("AULA DA TERÇA")
+linha()
