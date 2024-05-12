@@ -1,15 +1,12 @@
-"Erro"
 n = int(input("Digite um número: "))
-fato = 0
 salva = n
-guarda = 0
-while n > 1:
-    menos = n - 1
-    mult = salva * menos
-    guarda += mult
-    print(guarda)
-    fato = guarda * menos
-    n -= 1    
+fato = 1
+print(f'Canculando {n}! = ')
+while salva > 0:
+    print(f'{salva}', end='')
+    print('x' if salva > 1 else '=', end='')
+    fato *= salva
+    salva -= 1
 print(fato)
 
 
