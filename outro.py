@@ -2,41 +2,44 @@ valor = float(input())
 n100 = n50 = n20 = n10 = n5 = n2 = 0
 m1 = m50 = m25 = m10 = m5 = m01 = 0
 
+valor = round(valor * 100)  # Converter o valor para centavos para evitar problemas de precisão
+
+if valor >= 10000:
+    n100 = valor // 10000
+    valor %= 10000
+if valor >= 5000:
+    n50 = valor // 5000
+    valor %= 5000
+if valor >= 2000:
+    n20 = valor // 2000
+    valor %= 2000
+if valor >= 1000:
+    n10 = valor // 1000
+    valor %= 1000
+if valor >= 500:
+    n5 = valor // 500
+    valor %= 500
+if valor >= 200:
+    n2 = valor // 200
+    valor %= 200
 if valor >= 100:
-    n100 = valor // 100
-    valor%=100 
+    m1 = valor // 100
+    valor %= 100
 if valor >= 50:
-    n50 = valor // 50
+    m50 = valor // 50
     valor %= 50
-if valor >= 20:
-    n20 = valor // 20
-    valor %= 20
+if valor >= 25:
+    m25 = valor // 25
+    valor %= 25
 if valor >= 10:
-    n10 = valor // 10
+    m10 = valor // 10
     valor %= 10
 if valor >= 5:
-    n5 = valor // 5
+    m5 = valor // 5
     valor %= 5
-if valor >= 2:
-    n2 = valor // 2
-    valor %= 2
 if valor >= 1:
-    m1 = valor // 1.00
-    valor %= 1
-if valor >= 0.50:
-    m50 = valor // 0.50
-    valor %= 0.50
-if valor >= 0.25:
-    m25 = valor // 0.25
-    valor %= 0.25
-if valor >= 0.10:
-    m10 = valor // 0.10
-    valor %= 0.10
-if valor >= 0.05:
-    m5 = valor // 0.05
-    valor %= 0.05
-else:
-    m01 = valor // 0.01
+    m01 = valor
+
 print('NOTAS:')
 print(f'{int(n100)} nota(s) de R$ 100.00')
 print(f'{int(n50)} nota(s) de R$ 50.00')
