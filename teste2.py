@@ -1,26 +1,12 @@
-n = input().split()
+n = float(input())
 
-A = int(n[0])
-B = int(n[1])
-C = int(n[2])
-D = int(n[3])
-
-somaCD = C + D
-somaAB = A + B
-
-if B > C:
-    if D > A:
-        if somaCD > somaAB:
-            if C > 0 and D > 0:
-                    if A % 2 == 0:
-                         print('Valores aceitos')
-                    else:
-                        print('Valores nao aceitos')
-            else:
-                print('Valores nao aceitos')
-        else:
-            print('Valores nao aceitos')
-    else:
-        print('Valores nao aceitos')
+if n >= 0 and n <= 25.00000:
+    print('Intervalo [0,25]')
+elif n >= 25.00001 and n <= 50.00000:
+    print('Intervalo (25,50]')
+elif n >= 50.00001 and n <= 75.00000:
+    print('Intervalo (50,75]')
+elif n >= 75.00001 and n <= 100.00000:
+    print('Intervalo (75,100]')
 else:
-    print('Valores nao aceitos')
+    print('Fora de internalo')
