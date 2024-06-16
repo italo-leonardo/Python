@@ -1,20 +1,11 @@
 n = input().split()
 
-x = float(n[0])
-y = float(n[1])
+A, B, C = float(n[0]), float(n[1]), float(n[2])
 
 
-if x > 0.0 and y > 0.0:
-    print('Q1')
-elif x < 0.0 and y > 0.0:
-    print('Q2')
-elif x < 0.0 and y < 0.0:
-    print('Q3')
-elif x > 0.0 and y <0.0:
-    print("Q4")
-elif x == 0.0 and y == 0.0:
-    print('Origem')
-elif x == 0:
-    print("Eixo Y")
-elif y == 0:
-    print("Eixo X")
+if A + B > C and B + C > A and A + C > B:
+    P = A + B + C
+    print(f'Perimetro = {P:.1f}')
+else:
+    Area = ((A + B) * C )/ 2
+    print(f'Area = {Area:.1f}')
