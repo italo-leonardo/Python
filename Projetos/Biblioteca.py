@@ -1,18 +1,6 @@
-livro1 = None
-livro2 = None
-livro3 = None
-livro4 = None
-livro5 = None
-reserva_livro1 = 0
-reserva_livro2 = 0
-reserva_livro3 = 0
-reserva_livro4 = 0
-reserva_livro5 = 0
-pessoa_livro1 = None
-pessoa_livro2 = None
-pessoa_livro3 = None
-pessoa_livro4 = None
-pessoa_livro5 = None
+livro1 = livro2 = livro3 = livro4 = livro5 = None
+reserva_livro1 = reserva_livro2 = reserva_livro3 = reserva_livro4 = reserva_livro5 = 0
+pessoa_livro1 = pessoa_livro2 = pessoa_livro3 = pessoa_livro4 = pessoa_livro5 = None
 
 def exibir_menu():
     print('===== Menu Principal =====')
@@ -86,7 +74,7 @@ def reservar_livro():
         print(f'O livro {livro1} foi reservado com sucesso para {pessoa_livro1} por 7 dias.')
     elif titulo == livro2 and reserva_livro2 == 0:
         pessoa_livro2 = input('Digite seu nome: ')
-        reserva_livro2 = 7
+        reserva_livro2 = 7  
         print(f'O livro {livro2} foi reservado com sucesso para {pessoa_livro2} por 7 dias.')
     elif titulo == livro3 and reserva_livro3 == 0:
         pessoa_livro3 = input('Digite seu nome: ')
@@ -252,7 +240,7 @@ while True:
             exit()
     elif opcao == '6':
         passar_dias()
-        print(passar_dias())        
+        print(passar_dias())       
     elif opcao == '0':
         print('Você encerrou o programa!')
         break
