@@ -6,5 +6,9 @@ while True:
        print('Tente novamente.', end='')
     else:
         print(f'Vocé digitou o número {num[op]}')
-        break
+        o = input('Deseja continuar [S/N]: ').upper()
+        if o == 'S':
+            continue
+        else:
+            break
 
