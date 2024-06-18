@@ -7,13 +7,10 @@ print(f'Lista de Times do Brasileirão: {futebol}')
 linha()
 print(f'Os 5 primeiros são: {futebol[0:5]}')
 linha()
-print(f'Os 4 últimos são: {futebol[16:20]}')
+print(f'Os 4 últimos são: {futebol[-4:]}')
 linha()
 print(f'Times em ordem alfabética: {sorted(futebol)}')
 linha()
-for p in range(0, len(futebol)):
-    if p == 5:
-        print(f'O São Paulo está na {p}ª posição')
-        break
+print(f'O São Paulo está na {futebol.index("São Paulo")+1}ª')
 linha() 
 print('O Chapecoense não esta na tabela de 2024.')
