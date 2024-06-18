@@ -15,5 +15,5 @@ for p in range(0, len(futebol)):
     if p == 5:
         print(f'O São Paulo está na {p}ª posição')
         break
-linha()
+linha() 
 print('O Chapecoense não esta na tabela de 2024.')
