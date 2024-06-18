@@ -1,4 +1,4 @@
-num = ('um', 'dois', 'tres', 'quatro')
+num = ('zero','um', 'dois', 'tres', 'quatro')
 
 while True:
     op = int(input('Digite um numero entre 0 e 4: '))
