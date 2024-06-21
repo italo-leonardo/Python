@@ -7,4 +7,3 @@ else:
     for i in range(h, hf - h + 2):
         d += 1
 print(f'O JOGO DUROU {d} HORA(S)')
-            
