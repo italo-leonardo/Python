@@ -39,5 +39,5 @@ elif media_final >= 4.0 and media_final < 7:
     print(f'Boa sorte na AVF de {disciplina} sua média foi {str(media_final).split(".")[0]}.{str(media_final).split('.')[1][0]}.')
     print('Precisa de 4.0 na prova para ser aprovado!!')
 else:
-    print(f'Reprovado com média {str(media_final).split(".")[0]}.{str(media_final).split('.')[1][0]}.')
+    print(f'Reprovado com média {str(media_final).split(".")[0]}.{str(media_final).split(".")[1][0]}.')
     print(f'Esta devendo {disciplina} agora!.')
