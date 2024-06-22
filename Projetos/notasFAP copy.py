@@ -1,5 +1,8 @@
 def ponto():
     print('-='*15)
+def prime_decimal():
+    prime_decimal = int(media * 10) % 10
+    return prime_decimal
 
 disciplina = str(input('Digite o nome da Disciplina: '))
 av1 = float(input('Digite seu nota da AV1: '))
@@ -11,6 +14,14 @@ tde4 = float(input('Digite seu nota do TDE4: '))
 
 media = ((av1 * 0.4) + (av2 * 0.4)) + (0.05 * (tde1 + tde2 + tde3 + tde4) ) 
 
+if media >= 7.2 and media <= 7.5:
+    while media == 7.5:
+        media += 0.1
+         
+    
+print(media)
+print(prime_decimal())
+ponto()
 print(f'{"SIMULADOR DE NOTAS":^30}')
 ponto()
 print()
