@@ -23,7 +23,7 @@ elif prime_decimal >= 7:
         prime_decimal += 1
         cont += 1
     prime_decimal /= 10
-else: 
+elif prime_decimal == 1 or prime_decimal == 6: 
     prime_decimal -= 1
     cont -= 1
 media_final = media_dois + (cont / 10)
