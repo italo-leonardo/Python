@@ -33,12 +33,11 @@ ponto()
 print(f'{"SIMULADOR DE NOTAS":^30}')
 ponto()
 print()
-print(media)
 if media_final >= 7.0:
-    print(f'Voçê esta aprovoda em {disciplina} com a media {media_final:.1f}.')
+    print(f'Voçê esta aprovoda em {disciplina} com a média {str(media_final).split(".")[0]}.{str(media_final).split('.')[1][0]}')
 elif media_final >= 4.0 and media_final < 7:
-    print(f'Boa sorte na AVF de {disciplina} sua media foi {media_final:.1f}.')
+    print(f'Boa sorte na AVF de {disciplina} sua média foi {str(media_final).split(".")[0]}.{str(media_final).split('.')[1][0]}.')
     print('Precisa de 4.0 na prova para ser aprovado!!')
 else:
-    print(f'Reprovado com media {media_final:.1f}.')
+    print(f'Reprovado com média {str(media_final).split(".")[0]}.{str(media_final).split('.')[1][0]}.')
     print(f'Esta devendo {disciplina} agora!.')
