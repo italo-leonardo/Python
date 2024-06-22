@@ -1,5 +1,5 @@
 def ponto():
-    print('-='*30)
+    print('-='*15)
 
 disciplina = str(input('Digite o nome da Disciplina: '))
 av1 = float(input('Digite seu nota da AV1: '))
@@ -12,8 +12,9 @@ tde4 = float(input('Digite seu nota do TDE4: '))
 media = ((av1 * 0.4) + (av2 * 0.4)) + (0.05 * (tde1 + tde2 + tde3 + tde4) ) 
 
 ponto()
-print('SIMULADOR DE NOTAS')
+print(f'{"SIMULADOR DE NOTAS":^30}')
 ponto()
+print()
 if media >= 7.0:
     print(f'Voçê esta aprovoda em {disciplina} com a media {media:.1f}.')
 elif media >= 4 and media < 7:
