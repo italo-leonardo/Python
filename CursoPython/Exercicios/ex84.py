@@ -13,4 +13,4 @@ while True:
 
 print('-='*30)
 print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
-print(f'O manior peso foi de {max(pessoas)}Kg.')
+print(f'O manior peso foi de {max(pessoas[0])}Kg.')
