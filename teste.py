@@ -1,9 +1,17 @@
-h, hf = map(int, input().split())
-d = 0
-if h >= hf:
-    for i in range(h, 24 + hf):
-        d += 1
+num = int(input())
+cid = ''
+des = [[61, 'Brasilia'], [71, 'Salvador'],
+[11, 'Sao Paulo'], [21, 'Rio de Janeiro'],
+[32, 'Juiz de Fora'], [19, 'Campinas'], 
+[27, 'Vitoria'], [31, 'Belo Horizonte']]
+
+for d in des:
+    if num == d[0]:
+       cid = d[1]
+
+if cid != '':
+    print(cid)
 else:
-    for i in range(h, hf - h + 2):
-        d += 1
-print(f'O JOGO DUROU {d} HORA(S)')
+    print('DDD nao cadastrado caso')
+    
+        
