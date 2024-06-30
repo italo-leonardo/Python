@@ -1,12 +1,10 @@
 aluno = dict()
-aluno['nome'] = str(input('Nome:'))
-aluno['Media'] = float(input(f'Média de {aluno['nome']}: '))
-print(f'O Nome é igual a {aluno["nome"]}')
-print(f'A Média é igual a {aluno["Media"]}')
+aluno['Nome'] = str(input('Nome:'))
+aluno['Media'] = float(input(f'Média de {aluno["Nome"]}: '))
 if aluno['Media'] >= 7.0:
-    print('Situação é igual a Aprovada')
-    aluno['situacao'] = str('Aprovado')
+    aluno['Situacao'] = str('Aprovado')
 else:
-    print('Situação é igual a Reprovado')
-    aluno['situacao'] = str('Reprovado')
-print(aluno)
+    aluno['Situacao'] = str('Reprovado')
+print('-='*30)
+for k, v in aluno.items():
+    print(f' -{k} é igual a {v}')
