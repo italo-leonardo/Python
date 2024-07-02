@@ -62,7 +62,7 @@ for c in range(0, 3):
     estado['sigla'] = str(input('Sigla do Estado: '))
     brasil.append(estado.copy())
 print(brasil)
-print(len(brasil))
+'''print(len(brasil))
 for e in brasil:
     for k, v in e.items():
-        print(f'O campo {k} tem valor {v}')
+        print(f'O campo {k} tem valor {v}')'''
