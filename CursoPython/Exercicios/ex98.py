@@ -5,10 +5,9 @@ def contagem(i, f, p):
         p *= -1
     if p == 0:
         p = 1
-        
     print('-='*30)
     print(f'Contador de {i} até {f} de {p} em {p}')
-
+    
     if i < f:
         cont = i
         while cont <= f:
