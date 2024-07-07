@@ -1,12 +1,14 @@
 from time import sleep
 
 def contagem(i, f, p):
-    print('-='*30)
-    print(f'Contador de {i} até {f} de {p} em {p}')
     if p < 0:
         p *= -1
     if p == 0:
         p = 1
+        
+    print('-='*30)
+    print(f'Contador de {i} até {f} de {p} em {p}')
+
     if i < f:
         cont = i
         while cont <= f:
