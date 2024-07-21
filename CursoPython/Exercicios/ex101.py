@@ -1,9 +1,11 @@
-idade = 0
-def voto():
-    ano = int(input('Em que ano você nasceu? '))
-    idada = 2024 - ano
+def voto(ano):
+    from datetime import date
+    atual = date.today().year
+    idade = atual - ano
     if idade >= 18:
-        return print(f'Com {idada} anos: VOTO OBRIGATÒRIO.')
+        return f'Com {idade} anos: VOTO OBRIGATÒRIO.'
     else:
-        return print(f'Com {idada} anos: NÂO VOTA')
-voto()
+        return f'Com {idade} anos: NÂO VOTA'
+    
+print(voto(int(input('Em que ano vc nasceu? '))))
+
