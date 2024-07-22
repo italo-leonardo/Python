@@ -1,19 +1,19 @@
-def metade(n):
+def metade(n, formato=False):
     m = n / 2
-    return m
+    return m if formato is False else moeda(n)
 
-def dobro(n):
+def dobro(n, formato=False):
     d = n * 2
-    return d
+    return d if formato is False else moeda(n)
 
-def aumento(n, taxa):
+def aumento(n, taxa, formato=False):
     v = n * (taxa/100)
     s  = v + n
-    return s
+    return s if formato is False else moeda(n)
 
-def dimunuir(n, taxa):
+def dimunuir(n, taxa, formato=False):
     di = n - (n * (taxa/100))
-    return di
+    return di if formato is False else moeda(n)
 
 def moeda(n = 0, moeda = 'R$'):
     return f'{moeda}{n:.2f}'.replace('.', ',')
