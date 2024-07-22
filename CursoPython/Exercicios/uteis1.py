@@ -14,3 +14,6 @@ def aumento(n, taxa):
 def dimunuir(n, taxa):
     di = n - (n * (taxa/100))
     return di
+
+def moeda(n = 0, moeda = 'R$'):
+    return f'{moeda}{n:.2f}'.replace('.', ',')
