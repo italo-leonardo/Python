@@ -17,3 +17,18 @@ def dimunuir(n, taxa, formato=False):
 
 def moeda(n = 0, moeda = 'R$'):
     return f'{moeda}{n:.2f}'.replace('.', ',')
+
+def retorno(n, formato=False):
+    return n if formato is False else moeda(n)
+
+
+def resumo(n):
+    print('-'*30)
+    print("RESUMO DO VALOR".center(30))
+    print('-'*30)
+    print(f'Preço analisado: \t{retorno(n, True)}')
+    print(f'Dobro do preço: \t{dobro(n, True)}')
+    print(f'Metade do preço: \t{metade(n, True)}')
+    print(f'80% de aumento: \t{aumento(n, 80, True)}')
+    print(f'35% de redução: \t{dimunuir(n, 35, True)}')
+    print('-'*30)
