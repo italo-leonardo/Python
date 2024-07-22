@@ -32,3 +32,13 @@ def resumo(n):
     print(f'80% de aumento: \t{aumento(n, 80, True)}')
     print(f'35% de redução: \t{dimunuir(n, 35, True)}')
     print('-'*30)
+
+def leiaDinheiro(msg):
+    valido = False
+    while not valido:
+        entrada = str(input(msg))
+        if entrada.isalpha():
+            print(f'ERRO:\"{entrada}\" é um preço invalido!')
+        else:
+            valido = True
+            return float(entrada)
