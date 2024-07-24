@@ -11,5 +11,5 @@ def testar_acesso(site):
         print(f'Deu erro - Não foi possível acessar o site {site}. Erro: {e}')
 
 # Exemplo de uso
-testar_acesso('https://www.pudim.com.br')
+testar_acesso('https://www.youtube.com')
 
