@@ -25,3 +25,21 @@ def menu(lista):
     print(linha())
     opc = leiaInt('\033[32mSua Opção: \033[m')
     return opc
+
+def criarArquivo(nome):
+    try:
+        a = open(nome, 'wt+')
+        a.close()
+    except:
+        print('Houve um ERRO na criação do arquivo!')
+    else:
+        print(f'Arquivo {nome} criado com sucesso!')
+
+def lerArquivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Erro ao ler arquivo!')
+    else:
+        cabecalho('PESSOAS CADASTRADAS')
+        print(a.read())
