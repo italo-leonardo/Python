@@ -1,4 +1,4 @@
-num = int(input())
+num = int(input("Digite um codigdo de cidade: "))
 cid = ''
 des = [[61, 'Brasilia'], [71, 'Salvador'],
 [11, 'Sao Paulo'], [21, 'Rio de Janeiro'],
