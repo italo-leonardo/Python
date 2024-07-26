@@ -10,10 +10,16 @@ if not uteis4.arquivoExiste(arq):
 while True:
     resposta = uteis3.menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
+        #Opção de listar o conteúdo de um pessoa.
         uteis3.lerArquivo(arq)
     elif resposta == 2:
-        print('Opção 2')
+        #Opção de cadastrar uma nova pessoa.
+        uteis3.cabecalho('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = uteis3.leiaInt('Idade: ')
+        uteis3.cadastar(arq, nome, idade)
     elif resposta == 3:
+        #Opção de fecha a programa.
         uteis3.cabecalho('Saindo do sistema.. Até logo!')
         break
     else:
