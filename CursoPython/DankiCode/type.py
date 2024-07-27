@@ -7,3 +7,7 @@ print(type(a))
 print(type(b))
 print(type(c))
 print(type(d))
+
+x = 2
+if x == 2:
+    print('Vamos')
