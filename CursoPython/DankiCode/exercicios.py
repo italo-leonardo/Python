@@ -22,6 +22,7 @@ pi = 3.14
 area = pi * (raio ** 2)
 print(f'A era do circulo e {area}')'''
 
+
 #05 - reais para dolar
 '''reais = float(input('Quantos reais que converter: '))
 dolar  = 5.64 
