@@ -7,7 +7,7 @@ Security = chave
 
 '''
 
-chave = input('Digite a base da sua senha: ')
+chave = input('Digite a base da sua senha: ') 
 
 senha = ''
 
