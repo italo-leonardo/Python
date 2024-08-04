@@ -1,4 +1,4 @@
-lista = ["chicago", "queens", "salvador", "pernambuco"]
+'''lista = ["chicago", "queens", "salvador", "pernambuco"]
 print(lista)
 
 lista2 = [2, 3, 4, 5, 10]
@@ -55,4 +55,14 @@ elemento = 43
 if elemento in lista7:
     print('Esta na lista')
 else:
-    print('Nao esta na lista')
+    print('Nao esta na lista')'''
+
+lista = ["chicago", "queens", "salvador", "pernambuco", "Bahia"]
+print(lista)
+lista[1] = 'crato' # modificacao de item da lista
+print(lista)
+lista[1:4] = ['Para', 'Rio de janeira', 'Belo Horizonte']
+print(lista)
+lista[1:5] = ['crato']
+print(lista)
+print(len(lista))
