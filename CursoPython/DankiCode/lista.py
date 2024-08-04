@@ -63,6 +63,7 @@ lista[1] = 'crato' # modificacao de item da lista
 print(lista)
 lista[1:4] = ['Para', 'Rio de janeira', 'Belo Horizonte']
 print(lista)
+
 lista[1:5] = ['crato']
 print(lista)
 print(len(lista))
