@@ -31,7 +31,7 @@ tupla = ('item1', 'item2', 'item3', 'item1')
 '''(x, y, z, p) = tupla
 print(x)
 print(y)
-print(z)
+print(z)f
 print(p)'''
 (x, *y, z) = tupla
 print('X:', x)
