@@ -1,3 +1,6 @@
-for x in range(0, 102, 2):
-    if x > 0:
-        print(x)
+cont = 0
+for i in range(1, 7):
+    n = int(input())
+    if n > 0:
+        cont += 1
+print(f"{cont} valores positivos")
