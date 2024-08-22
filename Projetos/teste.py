@@ -10,4 +10,4 @@ for num in range(1, 7):
 media = total / positivo
 
 print(f'{positivo} valores positivos')
-print(f'{media}:.1f')
+print(f'{media:.2f}')
