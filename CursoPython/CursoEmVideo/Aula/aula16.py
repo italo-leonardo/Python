@@ -20,18 +20,19 @@ print('Comi muito!!')'''
 #print(sorted(lanche)) #Ordenado
 #print(lanche) #Normal
 
-'''a = (2, 5, 4)
+a = (2, 5, 4)
 b = (5, 8, 1, 3)
 c = a + b
 print(c)
 print(c.count(5))
-print(c.index(8))'''
+print(c.index(8))
+print(len(c))
 
-pessoa = ('Italo', 22, 'M', 70.36)
+'''pessoa = ('Italo', 22, 'M', 70.36)
 del(pessoa) # deleta em python 
 pessoa = ('Marcos', 23, 'M', 70.36)
 print(pessoa)
 pessoa1 = str(input('Nome: ')), int(input('idade: '))
 print(pessoa1)
 c = pessoa1[1] + 10
-print(c)
+print(c)'''
