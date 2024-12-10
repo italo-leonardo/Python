@@ -1,14 +1,15 @@
 from sympy import symbols, Piecewise, solve
 
+valor = float(input())
 # Parâmetros fornecidos
-preco_final = 46.47  # Preço final
-preco_pauta = 45.48  # Preço da pauta fiscal
-aliquota_icms = 0.22  # Alíquota de ICMS (22%)
-aliquota_icmsst = 0.22  # Alíquota de ICMS-ST (22%)
+preco_final = valor  # Preço final
+aliquota_icms = 0.12  # Alíquota de ICMS (22%)
+aliquota_icmsst = 0.20  # Alíquota de ICMS-ST (22%)
 aliquota_ipi = 0.0195  # Alíquota de IPI (1,95%)
 
 # Variável simbólica para o preço de mercado
 preco_merc = symbols('preco_merc', positive=True)
+preco_pauta = (preco_merc + (preco_merc * aliquota_ipi) ) * 2.4  # Preço da pauta fiscal
 
 # Cálculo do ICMS
 vlr_icms = preco_merc * aliquota_icms
