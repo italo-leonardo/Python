@@ -1,13 +1,9 @@
-positivo = 0
-total = 0
+media = int(input())
 
-for num in range(1, 7):
-    num = float(input())
-    if num >= 0:
-        positivo += 1
-        total += num
-        
-media = total / positivo
-
-print(f'{positivo} valores positivos')
-print(f'{media:.2f}')
+match media:
+    case media if media < 5:
+        print("Voce foi reprovado")
+    case media if 5 <= media < 7:
+        print("Voce fara a recuperacao")
+    case media if media >= 7:
+        print("Voce foi aprovado")
