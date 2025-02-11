@@ -6,8 +6,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 application = Application.builder().token("8025292766:AAF77DC0sP2M8Nxgni9mxCMtYOVFtCJ11eg").build()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user = update.effective_user.usarname
-    await update.message.reply(f'Ola {user}, esse é o nosso primeiro bot com telegram')
+    user = update.effective_user.username
+    await update.message.reply_text(f'Ola {user}, esse é o nosso primeiro bot com telegram')
 
 application.add_handler(CommandHandler("start", start))
 
