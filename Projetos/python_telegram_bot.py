@@ -43,7 +43,7 @@ async def flashcard_game(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data['item'] = item
     
     await update.message.reply_photo(
-        photo=open(item['imagem'],'rb'),
+        photo=open(item['img'],'rb'),
         caption='O que é isso? Descreva o objeto em inglês.'
     )
     return FLASHCARD_REPLY
