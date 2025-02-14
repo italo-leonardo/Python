@@ -1,0 +1,32 @@
+[
+    {
+        "nome_em_us": "apple",
+        "nome_em_pt": "maçã",
+        "imagem": "images/apple.png"
+    },
+    {
+        "nome_em_us": "banana",
+        "nome_em_pt": "banana",
+        "imagem": "images/banana.png"
+    },
+    {
+        "nome_em_us": "grape",
+        "nome_em_pt": "uva",
+        "imagem": "images/grape.png"
+    },
+    {
+        "nome_em_us": "orange",
+        "nome_em_pt": "laranja",
+        "imagem": "images/orange.png"
+    },
+    {
+        "nome_em_us": "strawberry",
+        "nome_em_pt": "morango",
+        "imagem": "images/strawberry.png"
+    },
+    {
+        "nome_em_us": "pineapple",
+        "nome_em_pt": "abacaxi",
+        "imagem": "images/pineapple.png"
+    }
+]
